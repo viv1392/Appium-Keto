@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="appUtilities.KetoListners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="ketoTest.KetoTest">
+        <methods>
+          <include name="MenNonVegTest"/>
+          <include name="womenNonVegan"/>
+          <include name="tearDown"/>
+          <include name="womenVegan"/>
+          <include name="popUp"/>
+          <include name="ketoTestVegetarian"/>
+        </methods>
+      </class> <!-- ketoTest.KetoTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
