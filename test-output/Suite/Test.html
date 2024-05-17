@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 17 16:02:44 IST 2024</td>
+<td>Started on:</td><td>Fri May 17 17:18:59 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>204 seconds (204626 ms)</td>
+<tr><td>Total time:</td><td>672 seconds (672173 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,139 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='ketoTest.KetoTest.popUp()'><b>popUp</b><br>Test class: ketoTest.KetoTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace824199517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace824199517'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>29</td>
-<td>ketoTest.KetoTest@6f1de4c7</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='ketoTest.KetoTest.tearDown()'><b>tearDown</b><br>Test class: ketoTest.KetoTest</td>
-<td></td>
-<td>-1715942169</td>
-<td>ketoTest.KetoTest@6f1de4c7</td></tr>
-<tr>
-<td title='ketoTest.KetoTest.popUp()'><b>popUp</b><br>Test class: ketoTest.KetoTest</td>
-<td></td>
-<td>-1715942169</td>
-<td>ketoTest.KetoTest@6f1de4c7</td></tr>
-<tr>
-<td title='ketoTest.KetoTest.popUp()'><b>popUp</b><br>Test class: ketoTest.KetoTest</td>
-<td></td>
-<td>-1715942169</td>
-<td>ketoTest.KetoTest@6f1de4c7</td></tr>
-<tr>
-<td title='ketoTest.KetoTest.tearDown()'><b>tearDown</b><br>Test class: ketoTest.KetoTest</td>
-<td></td>
-<td>-1715942169</td>
-<td>ketoTest.KetoTest@6f1de4c7</td></tr>
-<tr>
-<td title='ketoTest.KetoTest.tearDown()'><b>tearDown</b><br>Test class: ketoTest.KetoTest</td>
-<td></td>
-<td>-1715942169</td>
-<td>ketoTest.KetoTest@6f1de4c7</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='ketoTest.KetoTest.MenNonVegTest()'><b>MenNonVegTest</b><br>Test class: ketoTest.KetoTest</td>
-<td></td>
-<td>155</td>
-<td>ketoTest.KetoTest@6f1de4c7</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -213,9 +81,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
+Command: [73876335-389d-4a51-92e1-2b77f688e58f, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;I agree&apos;]}]
 Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
+Session ID: 73876335-389d-4a51-92e1-2b77f688e58f
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -226,17 +94,21 @@ Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at skinObjectsRegestration.EmailId.emailId(EmailId.java:35)
+	at ketoTest.KetoTest.womenNonVegan(KetoTest.java:223)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906057135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1906057135'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1516507032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1516507032'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
+Command: [73876335-389d-4a51-92e1-2b77f688e58f, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;I agree&apos;]}]
 Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
+Session ID: 73876335-389d-4a51-92e1-2b77f688e58f
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -250,15 +122,15 @@ Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at skinObjectsRegestration.EmailId.emailId(EmailId.java:35)
+	at ketoTest.KetoTest.womenNonVegan(KetoTest.java:223)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -282,163 +154,30 @@ Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
+<td>150</td>
+<td>ketoTest.KetoTest@6f1de4c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ketoTest.KetoTest.ketoTestVegetarian()'><b>ketoTestVegetarian</b><br>Test class: ketoTest.KetoTest</td>
+<td></td>
+<td>150</td>
 <td>ketoTest.KetoTest@6f1de4c7</td></tr>
 <tr>
 <td title='ketoTest.KetoTest.womenVegan()'><b>womenVegan</b><br>Test class: ketoTest.KetoTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409933277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1409933277'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>155</td>
 <td>ketoTest.KetoTest@6f1de4c7</td></tr>
 <tr>
-<td title='ketoTest.KetoTest.ketoTestVegetarian()'><b>ketoTestVegetarian</b><br>Test class: ketoTest.KetoTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace469816326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace469816326'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [ba630e26-cac7-4154-8c26-8a708bf86eae, findElement {value=//android.widget.Button[@resource-id=&apos;com.android.permissioncontroller:id/permission_allow_button&apos;], using=xpath}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba630e26-cac7-4154-8c26-8a708bf86eae
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at baseTest.BaseClassApp.popUp(BaseClassApp.java:36)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
+<td title='ketoTest.KetoTest.MenNonVegTest()'><b>MenNonVegTest</b><br>Test class: ketoTest.KetoTest</td>
+<td></td>
+<td>150</td>
 <td>ketoTest.KetoTest@6f1de4c7</td></tr>
 </table><p>
 </body>

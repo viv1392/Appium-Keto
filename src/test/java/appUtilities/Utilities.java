@@ -1,7 +1,11 @@
 package appUtilities;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,12 +36,12 @@ public class Utilities {
 	public void back(AndroidDriver driver) {
 		driver.navigate().back();
 	}
-    public static void screenShots(AndroidDriver driver,String testName) {
-    	
-    	
-    	
+    public static String screenShots(AndroidDriver driver,String testName) throws IOException {
+    	File source=driver.getScreenshotAs(OutputType.FILE);
+    	String destinationFile=System.getProperty("user.dir")+"\\ScreenshotsApp\\screenshot"+testName+".png";
+    	FileUtils.copyFile(source, new File(destinationFile));
+    	return destinationFile;
 	}
-    
   }
 
 	

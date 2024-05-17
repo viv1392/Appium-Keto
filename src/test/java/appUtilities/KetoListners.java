@@ -4,6 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -11,6 +12,8 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
+import io.appium.java_client.android.AndroidDriver;
 
 
 public class KetoListners implements ITestListener {
@@ -38,6 +41,25 @@ public class KetoListners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.INFO, result.getThrowable());
 		test.log(Status.FAIL, result.getName() + "--TestFailed");
+		AndroidDriver driver=null;
+		
+		try {
+			driver = (AndroidDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (NoSuchFieldException e) {
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		}
+		try {
+			String capturePath=Utilities.screenShots(driver,result.getName());
+			test.addScreenCaptureFromPath(capturePath);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -49,7 +71,7 @@ public class KetoListners implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		report.flush();
-		File extentReport = new File(System.getProperty("user.dir") + "\\extentReport\\report.html");
+		File extentReport = new File(System.getProperty("user.dir") + "\\extentReportsApp\\reportApp.html");
 		try {
 			Desktop.getDesktop().browse(extentReport.toURI());
 		} catch (IOException e) {
