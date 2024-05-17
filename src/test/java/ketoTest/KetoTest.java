@@ -99,8 +99,8 @@ public class KetoTest extends BaseClassApp {
 		plan = date.eventDate();
 		weight = plan.oneAndOnlyPlan();
 		email = weight.yourWeight();
-//		planPage = email.emailId();
-//		planPage.sixMonthPlan();
+		planPage = email.emailId();
+		planPage.sixMonthPlan();
 	}
 	
 	@Test(testName = "women")
@@ -139,8 +139,8 @@ public class KetoTest extends BaseClassApp {
 		plan = occassion.noEvent();
 		weight = plan.oneAndOnlyPlan();
 		email = weight.yourWeight();
-//		planPage = email.emailId();
-//		planPage.threeMonthPlan();
+		planPage = email.emailId();
+		planPage.threeMonthPlan();
 	}
 	
 	@Test(testName="vegetarian")
@@ -179,8 +179,8 @@ public class KetoTest extends BaseClassApp {
 		plan = occassion.noEvent();
 		weight = plan.oneAndOnlyPlan();
 		email = weight.yourWeight();
-//		planPage = email.emailId();
-//		planPage.oneMonthPlan();
+		planPage = email.emailId();
+		planPage.oneMonthPlan();
 		
 	}
 	
@@ -220,7 +220,7 @@ public class KetoTest extends BaseClassApp {
 		plan = occassion.noEvent();
 		weight = plan.oneAndOnlyPlan();
 		email = weight.yourWeight();
-//		planPage = email.emailId();
-//		planPage.oneMonthPlan();
+		planPage = email.emailId();
+		planPage.oneMonthPlan();
 	}
 }

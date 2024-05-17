@@ -10,7 +10,7 @@ public class ExtntReport {
 	static ExtentSparkReporter sparkreporter;
 
 	public static ExtentReports extntReport() {
-		File filepath=new File(System.getProperty("user.dir")+"\\extentReport\\report.html");
+		File filepath=new File(System.getProperty("user.dir")+"\\extentReportsApp\\report.html");
 		sparkreporter=new ExtentSparkReporter(filepath);
 		sparkreporter.config().setTheme(Theme.DARK);
 		sparkreporter.config().setReportName("ketoAppAndroid");

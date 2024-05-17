@@ -4,7 +4,6 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -39,21 +38,6 @@ public class KetoListners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.INFO, result.getThrowable());
 		test.log(Status.FAIL, result.getName() + "--TestFailed");
-		WebDriver driver = null;
-
-		try {
-			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-		} 
-		catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-			e.printStackTrace();
-		}
-
-		try {
-			String destinationScreenshotPath = Utilities.screenShots(driver, result.getName());
-			test.addScreenCaptureFromPath(destinationScreenshotPath);
-		} catch (Exception e){
-			e.printStackTrace();
-		}
 	}
 
 	@Override

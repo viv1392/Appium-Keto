@@ -1,15 +1,16 @@
 package skinObjectsRegestration;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.appium.java_client.android.AndroidDriver;
+
 public class TargetZone {
-	WebDriver driver;
+	AndroidDriver driver;
 	public LastHappy happy;
 
-	public TargetZone(WebDriver driver) {
+	public TargetZone(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

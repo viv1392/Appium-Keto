@@ -1,18 +1,19 @@
 package skinObjectsRegestration;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.appium.java_client.android.AndroidDriver;
+
 public class Veggies {
-     WebDriver driver;
+	AndroidDriver driver;
      public OtherFoodItems otherItems;
-	public Veggies(WebDriver driver) {
+	public Veggies(AndroidDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc='I eat them all']/android.widget.ImageView")
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc='I eat all']/android.widget.ImageView")
 	WebElement allVeggies;
 	@FindBy(xpath="//android.widget.TextView[@text='Broccoli']")
 	 WebElement ele1;

@@ -1,15 +1,17 @@
 package skinObjectsRegestration;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CurrentWeight {
-	WebDriver driver;
+import appUtilities.Utilities;
+import io.appium.java_client.android.AndroidDriver;
+
+public class CurrentWeight extends Utilities {
+	AndroidDriver driver;
 	public PerfectWeight perfectWeight;
 
-	public CurrentWeight(WebDriver driver) {
+	public CurrentWeight(AndroidDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -31,6 +33,8 @@ public class CurrentWeight {
 	 WebElement ele;
 	public PerfectWeight currentWeightLb() {
 		ele1.click();
+		//javaScript(driver);
+		
 		ele2.click();
 		ele3.click();
 		ele4.click();

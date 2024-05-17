@@ -1,17 +1,17 @@
 package skinObjectsRegestration;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import appUtilities.Utilities;
+import io.appium.java_client.android.AndroidDriver;
 
 public class EmailId extends Utilities{
-	WebDriver driver;
+	AndroidDriver driver;
 	public PlanPage planPage;
 
-	public EmailId(WebDriver driver) {
+	public EmailId(AndroidDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
