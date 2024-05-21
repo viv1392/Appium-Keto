@@ -33,13 +33,11 @@ public class KetoListners implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		report.createTest(result.getName());
-		test.log(Status.INFO, result.getName() + "--TestPassed");
+		test.log(Status.PASS, result.getName() + "  TestSucced");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test.log(Status.INFO, result.getThrowable());
 		test.log(Status.FAIL, result.getName() + "--TestFailed");
 		AndroidDriver driver=null;
 		
@@ -64,14 +62,13 @@ public class KetoListners implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		report.createTest(result.getName());
-		test.log(Status.INFO, result.getName() + "--TestSkipped");
+		test.log(Status.SKIP, result.getName() + "--TestSkipped");
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
 		report.flush();
-		File extentReport = new File(System.getProperty("user.dir") + "\\extentReportsApp\\reportApp.html");
+		File extentReport = new File(System.getProperty("user.dir") + "\\extentReportsApp\\Appreport.html");
 		try {
 			Desktop.getDesktop().browse(extentReport.toURI());
 		} catch (IOException e) {

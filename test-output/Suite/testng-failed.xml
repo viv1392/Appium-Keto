@@ -8,8 +8,11 @@
     <classes>
       <class name="ketoTest.KetoTest">
         <methods>
+          <include name="MenNonVegTest"/>
           <include name="womenNonVegan"/>
           <include name="tearDown"/>
+          <include name="womenVegan"/>
+          <include name="ketoTestVegetarian"/>
           <include name="popUp"/>
         </methods>
       </class> <!-- ketoTest.KetoTest -->

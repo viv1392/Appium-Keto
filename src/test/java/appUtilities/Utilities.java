@@ -1,8 +1,10 @@
 package appUtilities;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -42,6 +44,14 @@ public class Utilities {
     	FileUtils.copyFile(source, new File(destinationFile));
     	return destinationFile;
 	}
+    public static String localHostUrl() throws IOException {
+    	FileInputStream fs=new FileInputStream(System.getProperty("user.dir")+"\\Config\\Config.properties");
+    	Properties prop =new Properties();
+    	prop.load(fs);
+    	String url =prop.getProperty("localhost");
+    	return url;
+    	
+    }
   }
 
 	

@@ -8,38 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">672,173</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">185,131</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ketoTest.KetoTest</td><td><a href="#m0">womenNonVegan</a></td><td rowspan="1">1715946887885</td><td rowspan="1">150829</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ketoTest.KetoTest</td><td><a href="#m1">MenNonVegTest</a></td><td rowspan="1">1715946556541</td><td rowspan="1">150940</td></tr><tr class="passedeven"><td><a href="#m2">ketoTestVegetarian</a></td><td rowspan="1">1715946722484</td><td rowspan="1">150255</td></tr><tr class="passedeven"><td><a href="#m3">womenVegan</a></td><td rowspan="1">1715947056372</td><td rowspan="1">155105</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ketoTest.KetoTest</td><td><a href="#m0">MenNonVegTest</a></td><td rowspan="1">1716274154867</td><td rowspan="1">164652</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">ketoTest.KetoTest#womenNonVegan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [73876335-389d-4a51-92e1-2b77f688e58f, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;I agree&apos;]}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 73876335-389d-4a51-92e1-2b77f688e58f
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at skinObjectsRegestration.EmailId.emailId(EmailId.java:35)
-	at ketoTest.KetoTest.womenNonVegan(KetoTest.java:223)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ketoTest.KetoTest#MenNonVegTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ketoTest.KetoTest#ketoTestVegetarian</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ketoTest.KetoTest#womenVegan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">ketoTest.KetoTest#MenNonVegTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -16,9 +16,7 @@
   </properties>
 
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 
-<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 <dependency>
     <groupId>io.appium</groupId>

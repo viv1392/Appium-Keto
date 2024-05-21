@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ketoTest.KetoTest">
+      <class name="mobileResponsive.MobileResponsivness">
         <methods>
-          <include name="womenNonVegan"/>
-          <include name="tearDown"/>
-          <include name="popUp"/>
+          <include name="mobileResponsive"/>
         </methods>
-      </class> <!-- ketoTest.KetoTest -->
+      </class> <!-- mobileResponsive.MobileResponsivness -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

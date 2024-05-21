@@ -1,128 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-17T17:18:59 IST" name="Suite" finished-at="2024-05-17T17:30:12 IST" duration-ms="672173">
+  <suite started-at="2024-05-21T12:18:54 IST" name="Default suite" finished-at="2024-05-21T12:22:00 IST" duration-ms="185131">
     <groups>
     </groups>
-    <test started-at="2024-05-17T17:18:59 IST" name="Test" finished-at="2024-05-17T17:30:12 IST" duration-ms="672173">
+    <test started-at="2024-05-21T12:18:54 IST" name="Default test" finished-at="2024-05-21T12:22:00 IST" duration-ms="185131">
       <class name="ketoTest.KetoTest">
-        <test-method is-config="true" signature="popUp()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:19:00 IST" name="popUp" finished-at="2024-05-17T17:19:16 IST" duration-ms="16174" status="PASS">
+        <test-method is-config="true" signature="popUp()[pri:0, instance:ketoTest.KetoTest@7c7b252e]" started-at="2024-05-21T12:18:54 IST" name="popUp" finished-at="2024-05-21T12:19:14 IST" duration-ms="19912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popUp -->
-        <test-method signature="MenNonVegTest()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:19:16 IST" name="MenNonVegTest" finished-at="2024-05-17T17:21:47 IST" duration-ms="150940" status="PASS">
+        <test-method signature="MenNonVegTest()[pri:0, instance:ketoTest.KetoTest@7c7b252e]" started-at="2024-05-21T12:19:14 IST" name="MenNonVegTest" finished-at="2024-05-21T12:21:59 IST" duration-ms="164652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MenNonVegTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:21:47 IST" name="tearDown" finished-at="2024-05-17T17:21:48 IST" duration-ms="618" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="popUp()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:21:48 IST" name="popUp" finished-at="2024-05-17T17:22:02 IST" duration-ms="14381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popUp -->
-        <test-method signature="ketoTestVegetarian()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:22:02 IST" name="ketoTestVegetarian" finished-at="2024-05-17T17:24:32 IST" duration-ms="150255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ketoTestVegetarian -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:24:32 IST" name="tearDown" finished-at="2024-05-17T17:24:33 IST" duration-ms="569" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="popUp()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:24:33 IST" name="popUp" finished-at="2024-05-17T17:24:47 IST" duration-ms="14570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popUp -->
-        <test-method signature="womenNonVegan()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:24:47 IST" name="womenNonVegan" finished-at="2024-05-17T17:27:18 IST" duration-ms="150829" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [73876335-389d-4a51-92e1-2b77f688e58f, findElement {using=xpath, value=//android.widget.TextView[@text='I agree']}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 73876335-389d-4a51-92e1-2b77f688e58f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [73876335-389d-4a51-92e1-2b77f688e58f, findElement {using=xpath, value=//android.widget.TextView[@text='I agree']}]
-Capabilities {appium:app: C:\Users\vivek\git\Appium-K..., appium:appPackage: ketodietplan.carbmanager.ke..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\vivek\git\Appium-K..., automationName: UIAutomator2, deviceName: Android Device, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23076PC4BI, appium:deviceName: 76f571ebe33e, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 76f571ebe33e, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 104, appium:takesScreenshot: true, appium:viewportRect: {height: 2356, left: 0, top: 104, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 73876335-389d-4a51-92e1-2b77f688e58f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at skinObjectsRegestration.EmailId.emailId(EmailId.java:35)
-at ketoTest.KetoTest.womenNonVegan(KetoTest.java:223)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- womenNonVegan -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:27:19 IST" name="tearDown" finished-at="2024-05-17T17:27:20 IST" duration-ms="508" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="popUp()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:27:20 IST" name="popUp" finished-at="2024-05-17T17:27:36 IST" duration-ms="16194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popUp -->
-        <test-method signature="womenVegan()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:27:36 IST" name="womenVegan" finished-at="2024-05-17T17:30:11 IST" duration-ms="155105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- womenVegan -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ketoTest.KetoTest@6f1de4c7]" started-at="2024-05-17T17:30:11 IST" name="tearDown" finished-at="2024-05-17T17:30:12 IST" duration-ms="601" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ketoTest.KetoTest@7c7b252e]" started-at="2024-05-21T12:21:59 IST" name="tearDown" finished-at="2024-05-21T12:22:00 IST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- ketoTest.KetoTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
